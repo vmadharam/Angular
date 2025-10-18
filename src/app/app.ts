@@ -4,10 +4,11 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { FirstComponent } from './first-component/first-component'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UpperCasePipe, FormsModule],
+  imports: [RouterOutlet, UpperCasePipe, FormsModule, FirstComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

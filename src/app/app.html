@@ -212,6 +212,7 @@
       <p>Congratulations! Your app is running. 🎉</p>
       <div class="container">
         <h1>Welcome to Angular's Signal Tutorial!</h1>
+        <app-first-component></app-first-component>
         <input type="text" [(ngModel)]="firstName"/>
         <h2>{{ firstName }}</h2>
         <input type="text" [value]="lastName()" (input)="lastName.set($event.target.value)" />
