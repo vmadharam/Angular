@@ -210,6 +210,10 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <p>You shopping cart contains the below items</p>
+      <shopping-list [items]="shoppingItems"></shopping-list>
+      <p>Your Address list contains</p>
+      <address-list [addresses]="addresses"></address-list>
       <div class="container">
         <h1>Welcome to Angular's Signal Tutorial!</h1>
         <app-first-component></app-first-component>

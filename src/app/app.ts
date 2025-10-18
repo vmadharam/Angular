@@ -5,10 +5,12 @@ import { HttpClient } from '@angular/common/http';
 import { UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FirstComponent } from './first-component/first-component'
+import { ShoppingList } from './shopping-list/shopping-list'
+import { AddressListComponent } from './address-list-component/address-list-component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UpperCasePipe, FormsModule, FirstComponent],
+  imports: [RouterOutlet, UpperCasePipe, FormsModule, FirstComponent,ShoppingList,AddressListComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
@@ -17,7 +19,12 @@ import { FirstComponent } from './first-component/first-component'
     })
     
 export class App implements OnInit{
-  
+
+  addresses = [
+    { street: "Third Avenue", city: "New York", zipCode: "10001" },
+    { street: "Constitution Avenue", city: "Washington", zipCode: "20001" }
+  ];
+  shoppingItems = ["Bread", "Eggs", "Milk"];
   firstName = 'Venu';
   lastName = signal('Madharam')
 
