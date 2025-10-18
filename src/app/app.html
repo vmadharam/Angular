@@ -232,6 +232,8 @@
       </svg>
       <h1>Hello, {{ title() }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
+      <button (click)="myClickHandler()">Click Me</button>
+      <p>Here is your ToDo List using for.</p>
       <ul>
          @for (todo of todos; track todo.id) {
          <li>{{todo.id}} - {{todo.title}}</li>

@@ -24,7 +24,7 @@ export class App implements OnInit{
         });
       }
 
-  public getData() {
-      return this.http.get<any[]>(this.apiUrl);
+  public myClickHandler() {
+      alert("Button Clicked");
     }
 }
