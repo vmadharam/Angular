@@ -1,1 +1,4 @@
 <p>first-component works!</p>
+@for (photo of photos | slice:0:5; track photo.id) {
+<li>{{ photo.id }} - {{ photo.url }}</li>
+}
