@@ -233,13 +233,13 @@
       </div>
       <p>Here is your ToDo List using for.</p>
       <ul>
-        @for (todo of todos; track todo.id) {
-        <li>{{todo.id}} - {{todo.title}}</li>
+        @for (todo of  todos | slice:0:5 ; track todo.id) {
+        <li>{{todo.id}} - {{todo.title | uppercase}}</li>
         }
       </ul>
       <p>Here is your comments List using for.</p>
       <ul>
-        @for (comment of comments; track comment.id) {
+        @for (comment of comments | slice:0:5; track comment.id) {
         <li>{{comment.id}} - {{comment.body | uppercase}}</li>
         }
       </ul>

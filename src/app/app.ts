@@ -2,7 +2,7 @@ import { Component, computed, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { UpperCasePipe } from '@angular/common';
+import { UpperCasePipe, CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FirstComponent } from './first-component/first-component'
 import { ShoppingList } from './shopping-list/shopping-list'
@@ -11,7 +11,7 @@ import { TemperatureConverterComponent } from './temperature-converter/temperatu
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UpperCasePipe, FormsModule, 
+  imports: [RouterOutlet, UpperCasePipe,CommonModule, FormsModule, 
     FirstComponent,ShoppingList,AddressListComponent,TemperatureConverterComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
