@@ -7,10 +7,12 @@ import { FormsModule } from '@angular/forms';
 import { FirstComponent } from './first-component/first-component'
 import { ShoppingList } from './shopping-list/shopping-list'
 import { AddressListComponent } from './address-list-component/address-list-component';
+import { TemperatureConverterComponent } from './temperature-converter/temperature-converter';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, UpperCasePipe, FormsModule, FirstComponent,ShoppingList,AddressListComponent],
+  imports: [RouterOutlet, UpperCasePipe, FormsModule, 
+    FirstComponent,ShoppingList,AddressListComponent,TemperatureConverterComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
